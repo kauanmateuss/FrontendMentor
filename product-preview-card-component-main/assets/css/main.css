@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    /* Colors */
+    --colorParagraphs: hsl(158, 36%, 37%);
+    --colorbody: hsl(30, 38%, 92%);
+
+    --color3: hsl(212, 21%, 14%);
+    --color4: hsl(228, 12%, 48%);
+    --colorWhite: hsl(0, 0%, 100%);
+
+
+    /* Fonts */
+    --fontMontserrat: 'Montserrat', sans-serif;
+    --fontFraunces: 'Fraunces', serif;
+}
+
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+}
+
+body{
+    background-color: var(--colorbody);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* Container */
+.container {
+    display: flex;
+}
+
+.img img {
+    height: 500px;
+    max-width: 350px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.informations {
+    background-color: var(--colorWhite);
+    max-width: 350px;
+    height: 500px;
+    padding: 40px;
+    border-radius: 0px 10px 10px 0px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.informations .nome-perfume{
+    font-family: var(--fontMontserrat);
+    color: var(--color4);
+    letter-spacing: 5px;
+}
+
+.informations .title {
+    font-family: var(--fontFraunces);
+    font-weight: 700;
+    font-size: 30pt;
+}
+
+.informations .descripition{
+    color: var(--color4);
+    font-family: var(--fontMontserrat);
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.informations .precos {
+    color: var(--color4);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.informations .precos h2 {
+    font-family: var(--fontFraunces);
+    color: var(--colorParagraphs);
+    font-size: 25pt;
+}
+
+.informations .btn {
+    background-color: var(--colorParagraphs);
+    padding: 15px 0px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.informations .btn:hover{
+    background-color: var(--color3);
+    cursor: pointer;
+}
+
+.informations .btn p {
+    color: var(--colorWhite);
+}
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}

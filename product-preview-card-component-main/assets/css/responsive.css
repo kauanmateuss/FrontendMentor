@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* -------------------- MOBILE ------------------ */
+
+@media screen and (max-width: 768px){
+
+    body {
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        margin: 20px 0px;
+    }
+
+    .img img{
+        height: 400px;
+        width: 350px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .informations {
+        border-radius: 0px 0px 10px 10px;
+    }
+
+
+}
